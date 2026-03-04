@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+}
