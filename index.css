@@ -4,8 +4,13 @@
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: aqua;
 }
 nav ul{
     list-style: none;
     padding-left: 0px;
+}
+.minimg{
+    width: 30px;
+    height: 30px;
 }
