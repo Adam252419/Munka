@@ -8,6 +8,11 @@ header{
 ul li {
    list-style-type: none;
 }
+main{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 main section{
     display: grid;
     grid-template-columns: 1fr 1fr;
