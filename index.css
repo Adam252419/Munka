@@ -1,16 +1,41 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: aqua;
+    grid-template-columns: 20% 1fr 1fr;
 }
 nav ul{
     list-style: none;
     padding-left: 0px;
 }
 .minimg{
-    width: 30px;
+    width: 23px;
+    height: 23px;
+}
+.headnav{
+    border-right: solid 1px grey;
+    height: 100vh;
+    padding: 10px 0px 0px 10px;
+}
+article{
+    margin-left: 100px;
+}
+img{
+    width: 100%;
+}
+.profileimg{
+    margin: 1px;
     height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: solid 2px black;
+}
+.profileline{
+    height: 31px;
+    align-items: center;
+}
+.card{
+    border: solid 1px grey;
 }
