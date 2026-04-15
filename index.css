@@ -1,55 +1,9 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
-main{
-    display: grid;
-    grid-template-columns: 20% 1fr 1fr;
-}
-nav ul{
-    list-style: none;
-    padding-left: 0px;
-}
-.minimg{
-    width: 23px;
-    height: 23px;
-}
-.headnav{
-    border-right: solid 1px grey;
-    height: 100vh;
-    padding: 10px 0px 0px 10px;
-}
-nav ul li a{
-    text-decoration: none;
-}
+
 article{
     width: 80%;
     margin-left: auto;
 }
-img{
-    width: 100%;
-}
-.profileimg{
-    margin: 1px;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    border: solid 2px black;
-}
-.profileimg2{
-    margin: 1px;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: solid 2px black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.profileline{
-    height: 31px;
-    align-items: center;
-}
+
 .post1 p{
     margin: 5px;
 }
