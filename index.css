@@ -70,6 +70,7 @@ aside{
 }
 @media screen and (max-width: 1000px){
     article{
+        width: 95%;
         margin: 5px auto 5px auto;
     }
 }
