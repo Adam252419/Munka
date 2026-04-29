@@ -3,7 +3,9 @@ article{
     width: 80%;
     margin-left: auto;
 }
-
+nav{
+    font-size: 30px;
+}
 .post1 p{
     margin: 5px;
 }
@@ -50,4 +52,19 @@ aside{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+.suggested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+.suggested p{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+.acts{
+    display: grid;
+    grid-template-columns: 20% 20% 1fr;
+    padding: 5px;
 }
