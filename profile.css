@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+
 header {
   border-bottom: 1px solid #dbdbdb;
   padding: 10px 20px;
@@ -180,7 +181,6 @@ header span {
     height: 200px;
   }
 }
-
 
 
 @media (max-width: 480px) {
