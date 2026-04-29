@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-/* HEADER */
+
 header {
   border-bottom: 1px solid #dbdbdb;
   padding: 10px 20px;
@@ -45,7 +45,7 @@ header span {
   margin-right: 5px;
 }
 
-/* PROFILE */
+
 #felso {
   max-width: 900px;
   margin: 40px auto;
@@ -94,7 +94,7 @@ header span {
   margin-right: 30px;
 }
 
-/* TABS */
+
 .goy {
   max-width: 900px;
   margin: 20px auto 0 auto;
@@ -119,7 +119,7 @@ header span {
   margin-top: -13px;
 }
 
-/* POSTS */
+
 #also {
   max-width: 900px;
   margin: 20px auto;
