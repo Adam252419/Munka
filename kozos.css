@@ -47,5 +47,16 @@ img{
     height: 31px;
     align-items: center;
 }
-
-
+@media screen and (max-width: 1000px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .headnav{
+        height: 200px;
+        border-right: none;
+    }
+    nav{
+        font-size: 18px;
+    }
+}

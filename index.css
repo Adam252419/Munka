@@ -68,3 +68,8 @@ aside{
     grid-template-columns: 20% 20% 1fr;
     padding: 5px;
 }
+@media screen and (max-width: 1000px){
+    article{
+        margin: 5px auto 5px auto;
+    }
+}
