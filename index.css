@@ -20,6 +20,9 @@ header div{
 }
 header div h1{
     font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(229, 89, 14);
+    text-shadow: 1px 1px 3px rgb(175, 48, 118);
 }
 
 nav{
