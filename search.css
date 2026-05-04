@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.mini_logok{
+    width: 30px;
+}
+
+header{
+    grid-area: header;
+}
+header div{
+    padding: 1vw;
+}
+header div h1{
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(229, 89, 14);
+    text-shadow: 1px 1px 3px rgb(175, 48, 118);
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav ul{
+    padding: 0px;
+}
+nav ul li{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+nav ul li a{
+    padding-left: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black
+}
+nav ul li a:hover{
+    color:blue;
+    text-shadow: 1px 1px 2px blue;
+}
