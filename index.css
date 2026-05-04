@@ -1,70 +1,226 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.mini_logok{
+    width: 30px;
+}
+
+header{
+    grid-area: header;
+}
+header div{
+    padding: 1vw;
+}
+header div h1{
+    font-size: 50px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav ul{
+    padding: 0px;
+}
+nav ul li{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+nav ul li a{
+    padding-left: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black
+}
+nav ul li a:hover{
+    color:blue;
+    text-shadow: 1px 1px 2px blue;
+}
 
 article{
-    width: 80%;
-    margin-left: auto;
-}
-nav{
-    font-size: 30px;
-}
-.post1 p{
-    margin: 5px;
-}
-.ismgrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-.ismgrid p{
-    margin: 0px;
-}
-.imsgrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: solid 1px rgb(165, 161, 161);
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 5px;
-}
-.post1{
-    border: solid 1px rgb(165, 161, 161);
-    border-radius: 5px;
-    margin-top: 5px;
-}
-.acts{
-    display: grid;
-    grid-template-columns: 20% 1fr 20%;
-    padding: 5px;
-}
-.p1{
-    margin: 0px;
-}
-.p2{
-    margin: 0px;
-    text-indent: 15px;
-    opacity: 0.5;
-    font-size: 13px;
-}
-.p3{
-    margin: auto;
-    color: blue;
+    grid-area: article;
+    padding-top: 1vw;
 }
 aside{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    grid-area: aside;
 }
-.suggested{
+.border{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: darkgray;
+    position: relative;
+    place-items: center;
+    place-content: center;
+    border-radius: 50%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px;
+    margin: 0px auto;
 }
-.suggested p{
-    margin-top: auto;
-    margin-bottom: auto;
+.border img{
+    z-index: 1;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+.border::before{
+    content: '';
+    position: absolute;
+    width: 95px;
+    background-image: linear-gradient(180deg, red, purple);
+    height: 95px;
+    border-radius: 50%;
+    animation: rotBGimg 4s linear infinite;
+    transition: all 0.2 linear;
+}
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.border2{
+    width: 80px;
+    height: 80px;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+.border2 img{
+    border-radius: 50%;
+}
+
+
+.ism{
+    text-align: center;
+}
+
+.ismerosgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.postok{
+    width: 50vw;
+    margin: 30px;
+    border: solid 2px black;
+    border-radius: 1vw;
+    margin: 2px auto;
+    
+}
+.postok p{
+    margin: 1vw;
+    font-size: 18px;
+}
+
+.postok_alt{
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    font-size: 30px;
+    align-items: center;
+}
+.postok_alt p{
+    margin: 0px;
+    font-size: 25px;
     font-weight: bold;
 }
-.acts{
+
+aside{
+    padding-top: 1vw;
+}
+
+.grid_p1{
+    font-size: 20px;
+}
+
+.grid_p2{
+    font-size: 15px;
+}
+.p3{
+    color: rgba(27, 138, 190, 0.997);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+.grid2{
     display: grid;
-    grid-template-columns: 20% 20% 1fr;
-    padding: 5px;
+    grid-template-columns: 85px 1fr 60px;
+    align-items: center;
+}
+
+.grid2 p{
+    margin: 1vw 0px;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vw;
+}
+
+.p1{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.p2{
+    margin: 0px;
+    text-align: right;
+    color: blue;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "header article aside"
+        "nav article aside"
+    ;
+}
+
+@media screen and (max-width:1300px) {
+    .grid{
+        grid-template-areas: 
+            "head article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+            "aside article"
+        ;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .postok{
+        width: 90vw;
+    }
+    .grid{
+        grid-template-areas: 
+            "head"
+            "nav"
+            "article"
+            "aside"
+        ;
+    }
 }
