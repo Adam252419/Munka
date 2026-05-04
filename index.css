@@ -79,7 +79,6 @@ aside{
     height: 95px;
     border-radius: 50%;
     animation: rotBGimg 4s linear infinite;
-    transition: all 0.2 linear;
 }
 @keyframes rotBGimg {
     from {
