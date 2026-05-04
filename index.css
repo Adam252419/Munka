@@ -153,9 +153,6 @@ aside{
 }
 
 
-
-
-
 .grid2{
     display: grid;
     grid-template-columns: 85px 1fr 60px;
@@ -208,6 +205,9 @@ aside{
             "aside article"
             "aside article"
         ;
+    }
+    aside{
+        margin: 1vw;
     }
 }
 
