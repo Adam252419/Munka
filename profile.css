@@ -1,1 +1,256 @@
-    
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  display: inline;
+  font-size: 22px;
+}
+
+header p {
+  margin: 0;
+  display: inline;
+  color: #8e8e8e;
+}
+
+header input {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #efefef;
+  font-size: 14px;
+  width: 200px;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+
+header span img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+header span {
+  margin-right: 5px;
+}
+
+
+#felso {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#felso > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 60px;
+}
+
+.profile-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 230px);
+}
+
+.profile-info p {
+  margin: 0 0 10px 0;
+}
+
+.profile-info button {
+  border: 1px solid #dbdbdb;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#fogaskerek_icon img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.statisztika {
+  margin-bottom: 12px;
+}
+
+.statisztika span {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+
+.goy {
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  border-top: 1px solid #dbdbdb;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.goy span {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  margin: 0 25px;
+}
+
+.goy span.active {
+  color: black;
+  border-top: 2px solid black;
+  padding-top: 10px;
+  margin-top: -13px;
+}
+
+
+#also {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: 280px;
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+
+  header input {
+    margin-left: 30px;
+    width: 130px;
+  }
+
+  #felso {
+    margin: 24px 16px;
+    padding: 0;
+  }
+
+  #felso > img {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+  }
+
+  .profile-info {
+    width: calc(100% - 150px);
+  }
+
+  .profile-info button {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+
+  .statisztika span {
+    margin-right: 20px;
+  }
+
+  .goy span {
+    margin: 0 14px;
+    font-size: 12px;
+  }
+
+  #also {
+    padding: 0 10px;
+  }
+
+  .post-img {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  header input {
+    display: none;
+  }
+
+  header span img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #felso {
+    margin: 20px 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  #felso > img {
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-info {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-info p {
+    margin: 0 0 8px 0;
+  }
+
+  .profile-info button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .statisztika span {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  .goy {
+    padding: 10px 0;
+  }
+
+  .goy span {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin: 0 8px;
+  }
+
+  .goy span.active {
+    padding-top: 8px;
+    margin-top: -11px;
+  }
+
+  #also .col-4 {
+    width: 50%;
+  }
+
+  #also {
+    padding: 0 6px;
+  }
+
+  .post-img {
+    height: 150px;
+  }
+}
