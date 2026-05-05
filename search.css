@@ -106,9 +106,45 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 2px solid black;
-    padding: 5px 0px;
+    padding: 10px 0px;
     border-radius: 15px;
+    background-color: rgb(32, 39, 106);
+    row-gap: 10px;
 }
 section{
     margin: 0px auto;
+}
+
+@media screen and (max-width:1300px) {
+    .grid{
+        grid-template-areas: 
+            "header"
+            "nav"
+            "article"
+        ;
+        grid-template-columns: 1fr;
+        margin: 0px auto;
+        width: 95vw;
+    }
+    .tagek{
+        margin: 1vw auto;
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .reelsgrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .reelsgrid{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:500px) {
+    .tagek{
+        grid-template-columns: 1fr;
+    }
 }
